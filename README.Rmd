@@ -12,9 +12,9 @@ library(stringr)
 
 date <- "1/11/2018"
 vendor <- "Pizza Capri"
-title <- "Title"
-file_title <- "Paper Title"
-short_title_n = 2
+title <- "Trade, Merchants, and the Lost Cities of the Bronze Age"
+file_title <- "Trade, Merchants, and Lost Cities"
+short_title_n = 5
 speaker <- "Ali Hortaçsu"
 department <- "Ralph and Mary Otis Isham Professor of Economics"
 university <- "University of Chicago"

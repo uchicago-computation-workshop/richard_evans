@@ -21,7 +21,7 @@
 
 <div class=pfblock-header3>
 <h2 class=pfblock-header>
-  <a href="https://github.com/uchicago-computation-workshop/ali_hortacsu/blob/master/2018__hortacsu__paper_title.pdf" >Title</a>
+  <a href="https://github.com/uchicago-computation-workshop/ali_hortacsu/blob/master/2018__hortacsu__trade_merchants_and_lost_cities.pdf" >Trade, Merchants, and the Lost Cities of the Bronze Age</a>
 </h2>
 
 <br>
