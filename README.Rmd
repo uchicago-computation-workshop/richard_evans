@@ -1,0 +1,141 @@
+---
+output:
+  html_document:
+    highlight: null
+    css: style.css
+    self_contained: no
+    keep_md: true
+---
+
+```{r, echo=FALSE}
+library(stringr)
+
+date <- "1/11/2018"
+vendor <- "Pizza Capri"
+title <- "Title"
+file_title <- "Paper Title"
+short_title_n = 2
+speaker <- "Ali Hortaçsu"
+department <- "Ralph and Mary Otis Isham Professor of Economics"
+university <- "University of Chicago"
+github_home <- "https://github.com/uchicago-computation-workshop"
+
+
+```
+
+```{r, echo=FALSE}
+#Function to Shorten Title
+small_title <- function(x, n=3) {
+  ul <- unlist(strsplit(x, split = "\\s+"))[1:n]
+  paste(ul,collapse=" ")
+}
+
+#Characters
+unwanted_array = list(    'Š'='S', 'š'='s', 'Ž'='Z', 'ž'='z', 'À'='A', 'Á'='A', 'Â'='A', 'Ã'='A', 'Ä'='A', 'Å'='A', 'Æ'='A', 'Ç'='C', 'È'='E', 'É'='E',
+                            'Ê'='E', 'Ë'='E', 'Ì'='I', 'Í'='I', 'Î'='I', 'Ï'='I', 'Ñ'='N', 'Ò'='O', 'Ó'='O', 'Ô'='O', 'Õ'='O', 'Ö'='O', 'Ø'='O', 'Ù'='U',
+                            'Ú'='U', 'Û'='U', 'Ü'='U', 'Ý'='Y', 'Þ'='B', 'ß'='Ss', 'à'='a', 'á'='a', 'â'='a', 'ã'='a', 'ä'='a', 'å'='a', 'æ'='a', 'ç'='c',
+                            'è'='e', 'é'='e', 'ê'='e', 'ë'='e', 'ì'='i', 'í'='i', 'î'='i', 'ï'='i', 'ð'='o', 'ñ'='n', 'ò'='o', 'ó'='o', 'ô'='o', 'õ'='o',
+                            'ö'='o', 'ø'='o', 'ù'='u', 'ú'='u', 'û'='u', 'ý'='y', 'ý'='y', 'þ'='b', 'ÿ'='y' )
+
+
+#Year
+year <- substr(date, nchar(date)-4+1, nchar(date))
+
+#Author Name
+author_clean_lower <- str_replace_all(str_to_lower(speaker), " ", "_")
+
+#Remove Unwanted Characters
+out <- author_clean_lower
+for(i in seq_along(unwanted_array))
+    out <- gsub(names(unwanted_array)[i],unwanted_array[i],out)
+author_clean <- out
+author_lastname <- tail(strsplit(author_clean,split="_")[[1]],1)
+
+#Repository Name
+#repo = paste(year, author_clean, sep = "_")
+repo = author_clean
+issues_page <- paste(github_home, repo, "issues", sep="/")
+repo_page <- paste(github_home, repo, sep="/")
+
+#Create File Name Parts
+short_title <- small_title(file_title, short_title_n)
+paper_file <- paste(year, author_lastname, short_title, sep="  ")
+
+#Clean Up File Name
+punct <- '[]\\?!\"\'#$%&(){}+*/:;,._`|~\\[<=>@\\^-]'
+
+#Remove Punctuation
+lowered_name <- str_to_lower(paper_file)
+stripped_name <- str_replace_all(lowered_name, punct, "")
+cleaned_name <- str_replace_all(stripped_name, " ", "_")
+cleaned_paper_file <- paste(cleaned_name, "pdf", sep=".")
+
+#File Name Link
+paper_link = paste(github_home, repo, "blob/master", cleaned_paper_file, sep="/"  )
+
+
+#Clean Short Title
+short_title_clean <- str_replace_all(short_title, punct, "")
+
+```
+
+<br>
+
+<h3 class=pfblock-header> The Computational Social Science Workshop Presents </h3>
+
+<h1 class=pfblock-header3> `r speaker` </h1>
+<h3 class=pfblock-header3> `r department` </h3>
+<h3 class=pfblock-header3> `r university` </h3>
+
+<br><br>
+
+
+
+<p class=pfblock-header3>The <a href="https://macss.uchicago.edu/content/computation-workshop"> Computational Social Science Workshop </a> at the University of Chicago cordially invites you to attend this week's talk:</p>
+
+<br>
+
+<div class=pfblock-header3>
+<h2 class=pfblock-header>
+  <a href="`r paper_link`" >`r title`</a>
+</h2>
+
+<br>
+</div>
+
+<p class=footertext2>
+
+**Abstract:** Paper abstract here.
+</p>
+
+<br>
+
+<h4 class=pfblock-header3> Thursday, `r date` </h4>
+<h4 class=pfblock-header3> 11:00am-12:20pm </h4>
+<h4 class=pfblock-header3> Kent 120 </h4>
+
+<br>
+
+<p class=pfblock-header3>A light lunch will be provided by `r vendor`.</p>
+
+<br><br>
+
+<!--Insert Faculty Bio Here-->
+
+
+
+<p class=footertext2>
+
+**Dr. Hortaçsu's** work is focused on empirically assessing the efficiency of markets, utilizing detailed micro-level data from the markets he studies to estimate preference and technology parameters that rationalize individual behavior and then use the estimated preferences and technological parameters to construct (constrained) “efficient” benchmarks and assess how far observed market outcomes are from efficiency. This framework has been applied to many market settings, including financial markets, energy markets, and the Internet, and a variety of market clearing mechanisms, including auctions, matching, and costly search. His current research interests include: Industrial organization; auctions; search and matching models; production and financial networks; applications in finance, energy markets and the internet. For more information, visit his homepage.
+</p>
+
+
+
+
+<br><br>
+
+---
+
+<p class=footertext> The 2017-2018 <a href="https://macss.uchicago.edu/content/computation-workshop"> Computational Social Science Workshop </a> meets each Thursday from 11 a.m. to 12:20 p.m. in Kent 120. All interested faculty and graduate students are welcome.</p> 
+
+<p class=footertext>Students in the Masters of Computational Social Science program are expected to attend and join the discussion by posting a comment on the <a href="`r issues_page`"> issues page </a> of the <a href="`r repo_page`"> workshop's public repository on GitHub.</a> Further instructions are documented in the Computational Social Science Workshop's <a href="https://github.com/uchicago-computation-workshop/README"> README on Github.</a></p>
