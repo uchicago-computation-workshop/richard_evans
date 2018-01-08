@@ -29,7 +29,7 @@
 
 <p class=footertext2>
 
-**Abstract:** Paper abstract here.
+**Abstract:** We analyze a large dataset of commercial records produced by Assyrian merchants in the 19th Century BCE. Using the information collected from these records, we estimate a structural gravity model of long-distance trade in the Bronze Age. We use our structural gravity model to locate lost ancient cities. In many instances, our structural estimates confirm the conjectures of historians who follow different methodologies. In some instances, our estimates confirm one conjecture against others. Confronting our structural estimates for ancient city sizes to modern data on population, income, and regional trade, we document persistent patterns in the distribution of city sizes across four millennia, even after controlling for time-invariant geographic attributes such as agricultural suitability. Finally, we offer evidence in support of the hypothesis that large cities tend to emerge at the intersections of natural transport routes, as dictated by topography.
 </p>
 
 <br>
