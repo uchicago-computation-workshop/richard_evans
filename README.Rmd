@@ -11,11 +11,11 @@ output:
 library(stringr)
 
 date <- "1/18/2018"
-vendor <- "Pizza Capri"
+vendor <- "Papa John's"
 title <- "Why Networks Matter to Suicide: Examining the Cultural Underpinnings of Suicide Diffusion in Adolescence"
 file_title <- "Suicide Diffusion in Adolescence"
 short_title_n = 4
-speaker <- "Anna S. Mueller"
+speaker <- "Anna Mueller"
 department <- "Assistant Professor, Department of Comparative Human Development"
 university <- "University of Chicago"
 github_home <- "https://github.com/uchicago-computation-workshop"
