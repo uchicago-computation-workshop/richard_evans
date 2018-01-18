@@ -122,11 +122,11 @@ short_title_clean <- str_replace_all(short_title, punct, "")
 
 <!--Insert Faculty Bio Here-->
 
-
-
 <p class=footertext2>
-**BIO** 
+
+**BIO:** TBD
 </p>
+
 
 
 
