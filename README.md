@@ -44,13 +44,11 @@
 
 <br><br>
 
-<!--Insert Faculty Bio Here-->
-
-
-
 <p class=footertext2>
-**BIO** 
+
+**BIO** TBD
 </p>
+
 
 
 
