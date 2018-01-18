@@ -49,8 +49,8 @@
 
 
 <p class=footertext2>
-**BIO**
-
+**BIO** 
+</p>
 
 
 
