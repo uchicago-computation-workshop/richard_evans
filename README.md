@@ -29,7 +29,9 @@
 
 <p class=footertext2>
 
-**Abstract:** TBD
+**Abstract:** In this talk, I will discuss the value of open source methods, workflow, and collaboration in the context of economic policy analysis, academic research, and teaching.
+* **Economic Policy Analysis:* U.S. fiscal policy influences how $3.8 trillion is spent every year and from whom $3.2 trillion in tax revenues are taken. Estimates of the effects of proposed fiscal reforms come from a variety of economic models, ranging partial equilibrium microsimulation models, to reduced-form econometric models, to large-scale general equilibrium macroeconomic models. All of the models used to analyze and predict the effects of new fiscal legislation have hundreds--sometimes thousands--of degrees of freedom. They are also all proprietary and closed source, except for some new models I have contributed to. I will present results from three papers recent papers describing uses of the [OG-USA](https://github.com/open-source-economics/OG-USA) large-scale open source macroeconomic model for policy analysis, the [Tax-Calculator](https://github.com/open-source-economics/Tax-Calculator) microsimulation model of U.S. tax policy, and the [TaxBrain](https://www.ospc.org/taxbrain/) web application through which noneconomists can run these models on AWS servers.
+* **Economic Research:**
 </p>
 
 <br>
