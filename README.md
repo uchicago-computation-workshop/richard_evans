@@ -7,7 +7,7 @@
 
 <h3 class=pfblock-header> The Computational Social Science Workshop Presents </h3>
 
-<h1 class=pfblock-header3> [Richard Evans](https://sites.google.com/site/rickecon/) </h1>
+<h1 class=pfblock-header3> <a href="https://sites.google.com/site/rickecon/">Richard W. Evans</a> </h1>
 <h3 class=pfblock-header3> Senior Lecturer in Computational Social Science; Director, Open Source Macroeconomics Laboratory; Fellow, Becker Friedman Institute </h3>
 <h3 class=pfblock-header3> University of Chicago </h3>
 
