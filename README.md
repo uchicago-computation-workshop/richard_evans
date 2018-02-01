@@ -21,7 +21,7 @@
 
 <div class=pfblock-header3>
 <h2 class=pfblock-header>
-  <a href="https://github.com/uchicago-computation-workshop/richard_evans/blob/master/2018__evans__open_source_modeling_policy_analysis.pdf" >Open Source Modeling for Policy Analysis and Research</a>
+  <a href="https://github.com/uchicago-computation-workshop/richard_evans/blob/master/2018__evans__open_source_modeling_policy_analysis.pdf" >Open Source Modeling for Policy Analysis, Research, and Teaching</a>
 </h2>
 
 <br>
